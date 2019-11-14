@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+    <title>Using Grid to Organize a Webpage</title>
+    <meta charset="utf-8">
+    <meta name="description" content="usung grid to build a site">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    #backingcss {margin:0 auto; border: 1px Solid BLue; display:grid; grid-template-columns: 200px auto; grid-template-rows: 200px auto 100px; width:850px; height: 900px; 
+}
+    header {background-color: aliceblue; width: 100%; grid-area: 1/1/2/3; text-align: center;}
+    index {background-color:lightblue;width: 150px; border-right:2px solid darkblue;}
+    main {background-color:skyblue;}
+    footer {background-color:aliceblue; width: 100%; grid-area:3/1/4/3; text-align: center;}
+</style>
+    </head>
+<body>
+<div id="backingcss">
+  <header>
+    <h1>Lighthouse Island Bistro</h1>
+    </header>
+  <index>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="rooms.html">Menu</a></li>
+    <li><a href="directions.html">Directions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  </index>
+  <main>
+    <section> 
+	  <h2>Heading of Section</h2>
+	  <p>Just a paragraph to represent the section inside main part of the page</p>
+        <p>This is more paragraph just to show the natural growth of the grid</p>
+    </section>
+    
+  </main>
+    <footer>CNIT 132 - Flex and Grid</footer>
+</div>
+</body>
+</html>
