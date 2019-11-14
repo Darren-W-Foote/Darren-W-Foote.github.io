@@ -6,36 +6,46 @@
     <meta name="description" content="usung grid to build a site">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    #backingcss {margin:0 auto; border: 1px Solid BLue; display:grid; grid-template-columns: 200px auto; grid-template-rows: 200px auto 100px; width:850px; height: 900px; 
+    :root {--color:blue;}
+    :root {--bground: aliceblue;}
+    #backingcss {margin:0 auto; border: 1px Solid BLue; display:grid; grid-template-columns: 200px auto; grid-template-rows: 200px auto 100px; width:860px; height: 900px; 
 }
-    header {background-color: aliceblue; width: 100%; grid-area: 1/1/2/3; text-align: center;}
-    index {background-color:lightblue;width: 200px; border-right:2px solid darkblue;}
-    main {background-color:skyblue;}
-    footer {background-color:aliceblue; width: 100%; grid-area:3/1/4/3; text-align: center;}
+    header {background-color: var(--bground); width: 100%; grid-area: 1/1/2/3; text-align: center; color: var(--color); border-bottom: 5px solid darkblue;}
+    nav {background-color:whitesmoke;width: 200px; border-right:2px solid darkblue; font-weight: bold;}
+    nav ul {list-style-type: none; padding: 0; }
+    nav a {text-decoration: none; display:block; width: 100%;}
+    nav li{ background-color:lightblue; padding: 20px; border-radius: 10px; margin-top: 5px; margin-left: 10px; display: inline-block; border: 2px solid maroon; text-align:center; width: 120px;}
+    main {background-color:skyblue; border-left: 5px solid darkblue; text-indent: 10px;}
+    footer {background-color: var(--bground); width: 100%; grid-area:3/1/4/3; text-align: center; color: var(--color); border-top: 5px solid darkblue;}
+    a:link {color:maroon;}
+    a:hover {color: white;}
+    nav ul {list-style-type: none }
 </style>
     </head>
 <body>
 <div id="backingcss">
   <header>
-    <h1>Lighthouse Island Bistro</h1>
+    <h1>CITY LIGHTS</h1>
     </header>
-  <index>
+  <nav>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="rooms.html">Menu</a></li>
+    <li><a href="rooms.html">Light fixtures</a></li>
     <li><a href="directions.html">Directions</a></li>
     <li><a href="contact.html">Contact</a></li>
   </ul>
-  </index>
+  </nav>
   <main>
     <section> 
-	  <h2>Heading of Section</h2>
-	  <p>Just a paragraph to represent the section inside main part of the page</p>
-        <p>This is more paragraph just to show the natural growth of the grid</p>
+	  <h2>Lighting the World</h2>
+	  <p>City Lights has been supplying lights to the Bay Area for decades. Through carefully selected fixtures we bring art and light together to brighten every day.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Light up your life as much as your home!</p>
     </section>
     
   </main>
-    <footer>CNIT 132 - Flex and Grid</footer>
+    <footer>&copy;CITY LIGHTS</footer>
 </div>
 </body>
 </html>
