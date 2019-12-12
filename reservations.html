@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+
+<title> Pacific Trails Resort Yurts</title>
+    <meta charset= "utf-8">
+    <meta name= "author" content= "Darren Footé">
+    <meta name= "keywords" content= "HTML, CSS, resort,vacation">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="finalstyle.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" >
+    </head>
+    
+    <style>
+     #wrapper {margin: 0 auto; display: grid; grid-template-columns: 200px auto; grid-template-rows: 300px auto auto ; height: 900px; width: 80%;min-width: 960px; background-color: lightcyan; box-shadow: 4px 4px slategrey;}
+        
+    </style>
+<body>
+    <div id="wrapper">
+<header>
+<h1>Pacific Trails Resort</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="yurts.html">Yurts</a></li>
+    <li><a href="activities.html">Activities</a></li>
+    <li><a href="reservations.html">Reservations</a></li>
+  </ul>
+</nav>
+<main> 
+   <h2>Reservation Requests</h2>
+        <form method="post" action="#" name="myform" id="form1">
+            <fieldset><legend>Personal Information</legend>
+            <label for="fname">First Name: </label><input type="text" name="fname" id="fname" maxlength="15" placeholder="Guest" required>
+            <br>
+            <label for="emailad">Email: </label><input type="email" id="emailad" name="email"><br>
+                <label for="age">Age: </label><input type="number" name="age" id="age" min="18"></fieldset><br>
+            <fieldset><legend>Your Reservation:</legend>
+            <label for="dt">Date you would like to arrive: </label><input type="date" name="dt" id="dt"><br>
+           <label for="dt">Date you would like to depart: </label><input type="date" name="dt" id="dt"><br>
+            <br>
+            <label for="comments">Comments / Requests: </label><br><textarea name="comments" id="comments" rows="10" cols="60"></textarea>
+            <br>
+            </fieldset>
+            <br>
+            <input type="submit" id="sub" value="Submit Reservation">
+            <input type="reset" id="clear" value="Clear Info">
+        </form>
+  </main>
+<footer>
+<p>Copyright &copy; 2011 Pacific Trails Resort<br>
+</p>
+</footer>
+
+
+</div>
+    </body>
+</html>
