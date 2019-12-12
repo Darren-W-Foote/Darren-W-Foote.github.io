@@ -1,6 +1,6 @@
 
 
-    #wrapper {margin: 0 auto; display: grid; grid-template-columns: 200px auto; grid-template-rows: 300px auto auto ; height: 900px; width: 80%;min-width: 960px; background-color: lightcyan; box-shadow: 4px 4px slategrey;}
+    #wrapper {margin: 0 auto; display: grid; grid-template-columns: 200px auto; grid-template-rows: 300px auto auto ; width: 80%;min-width: 960px; background-color: lightcyan; box-shadow: 4px 4px slategrey;}
     
     
    
@@ -21,6 +21,20 @@
     .address{ font-size: 90%;}
     a:hover{color:white;}
     a:visited{color:  #344873 ;}
+
+
+#animation {animation: bird 10s forwards;
+    width: 68px;
+    height: 61px;
+    background-image: url('little-bird.gif');
+    background-repeat: no-repeat;
+    position:relative;
+    clear:both;}
+
+@keyframes bird {
+    from { left:0px; }
+    to { left: calc(100% - 100px);}
+}
     
     
     
