@@ -1,0 +1,21 @@
+#wrapper { display: grid; 
+                   grid-template-areas: 'logo logo'
+        'menu right' 'footer footer';
+            grid-gap: 5px;
+        grid-template-columns: 50% auto; 
+            background-color: lightyellow;
+           color: #000066;
+           width: 80%;
+		   margin: auto;
+           min-width:850px; }
+header{grid-area: logo; text-align: center; font-size: 3em; background-color: whitesmoke;}
+
+nav{grid-area: menu; border-right: 5px solid goldenrod; font-size: 3em; text-align: center;}
+nav ul {list-style-type: none;display: block; padding-top: 5px; padding-bottom: 5px;}
+nav li{border:5px solid gold; border-radius: 5px; padding-top: 10px; padding-bottom: 10px; text-align:center; display: inline-block; width: 80%; display: relative; align-content: space-between 10px;}
+
+ nav a{display: block; padding: 15px; padding-bottom: 10px; padding-top: 10px; text-decoration:none; color: #000033;}
+footer{grid-area: footer; background-color: lightyellow; text-align: center; font-size: 1em; border-top: 2px solid goldenrod;}
+
+main{ grid-area: right; background-color: lemonchiffon;}
+main h2{ padding: 15px;}
