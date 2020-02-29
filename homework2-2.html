@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<title> CNIT 133 Homework 2 part 2</title>
+    <meta charset= "utf-8">
+    <meta name= "author" content= "Darren Footé">
+    <meta name= "keywords" content= "HTML, CSS, CNIT 133, Homework2">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="homeworkstyle.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" >
+    <style>
+        form{border: 2px solid goldenrod; background-color: lightgoldenrodyellow; text-align: right;}
+        form td{font-size: 15px;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("textarea").fadeTo("slow", 0.15);
+  });
+ });
+        
+function process()
+{
+
+var number1, number2, number3, n1, n2, n3, sum, average, product, text1, text2, text3, validation;
+
+number1 = document.forms["myform"].elements["num1"].value;
+number2 = document.forms["myform"].elements["num2"].value;
+number3 = document.forms["myform"].elements["num3"].value;
+
+n1 = parseInt(number1);
+n2 = parseInt(number2);
+n3 = parseInt(number3);
+text1 = "The sum is:";
+text2 = "\n The average is:";
+text3 = "\n The Product is:";
+validation = "Please input valid numbers.";
+if(isNaN(n1) || isNaN(n2) || isNaN(n3)){
+    document.forms["myform"].elements["result"].value = validation;}
+else{
+    
+    sum = n1 + n2 + n3;
+    average = (n1 + n2 + n3)/3
+    product = n1 * n2 * n3
+    document.forms["myform"].elements["result"].value = text1 + sum + text2 + average + text3 + product;}
+    
+}
+
+</script>
+    
+    </head>
+    <div id= "wrapper">
+        <body>
+            <header>
+                <h1>Homework 2-2</h1>
+                
+            </header>
+            <nav>
+                <ul>
+                    <li> <a href="homework2.html">Homework 2</a></li>
+                    <li><a href="homework2-1.html">Homework 2-1</a></li>
+                <li><a href="homework2-2.html">Homework 2-2</a></li>
+                <li><a href="homework2-3.html">Homework 2-3</a></li>
+                </ul>
+            </nav>
+            <main>
+                <p>Using form input with JQuery</p>
+                <form name="myform">
+<table>
+<tr>
+<td>First Number:</td>
+<td><input type="text" name="num1" size="10"></td>
+</tr>
+<tr>
+<td>Second Number:</td>
+<td><input type="text" name="num2" size="10"></td>
+</tr>
+    <tr>
+<td>Third Number:</td>
+<td><input type="text" name="num3" size="10"></td>
+</tr>
+<br>
+</table>
+
+<br> Results:
+<textarea rows="8" cols="60" name="result">
+</textarea>
+<br>                
+<input type="button" onclick="process()" value="SUBMIT">
+<input type="reset" value="RESET">
+<br>                    
+ <button type="button">Click to fade results</button>
+                    <br><br>
+</form>
+                
+                
+                </main>
+            <footer>
+            <ul>
+                <li><a href="homework1.html">Home Page</a></li>
+                <li><a href="homework3.html">Homework 3</a></li>
+                <li><a href="homework4.html">Homework 4</a></li>
+                <li><a href="homework5.html">Homework 5</a></li>
+                <li><a href="homework6.html">Homework 6</a></li>
+                <li><a href="homework7.html">Homework 7</a></li>
+                <li><a href="homework8.html">Homework 8</a></li>
+            </ul>
+            
+            </footer>
+        
+        </body>
+        
+    </div>
+</html>

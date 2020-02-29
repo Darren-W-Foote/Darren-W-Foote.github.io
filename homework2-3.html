@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang= "en">
+<head>
+<title> CNIT 133 Homework 2 part 3</title>
+    <meta charset= "utf-8">
+    <meta name= "author" content= "Darren Footé">
+    <meta name= "keywords" content= "HTML, CSS, CNIT 133, Homework2">
+    <meta name= "viewport" content= "width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="homeworkstyle.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" >
+    <style>
+        form{border: 2px solid goldenrod; background-color: lightgoldenrodyellow; text-align: right;}
+        form td{font-size: 15px; border: 2px solid goldenrod;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <script>
+
+$(document).ready(function(){
+  $("button").click(function(){
+    $("textarea").fadeTo("slow", 0.15);
+  });
+ });
+
+        
+function process()
+{
+
+var list, countless, countmore, count0, validation;
+
+
+
+countmore = 0;
+countless = 0;
+count0 = 0;
+list = [{},{},{},{},{}];
+validation = "Please input valid numbers.";
+    for(x=0; x<list.length; ++x) {
+        list[x] = parseInt(document.getElementById('num'+x).value);
+       
+            if (list[x] < 0){
+            countless++;
+           
+        } else if (list[x] > 0){
+            countmore++;
+           
+        } else if (list[x] == 0){
+            count0++;
+             document.forms["myform"].elements["result"].value = (" The number of items below 0 are: " + countless + "\n The number of items  above 0 are: " + countmore + "\n The number of items equal to 0 are: " + count0 );
+        }  else {
+        document.forms["myform"].elements["result"].value = validation;
+            
+    }
+        
+    }
+    
+    
+
+
+   }
+        
+
+</script>
+    
+    </head>
+    <div id= "wrapper">
+        <body>
+            <header>
+                <h1>Homework 2-3</h1>
+                
+            </header>
+            <nav>
+                <ul>
+                    <li> <a href="homework2.html">Homework 2</a></li>
+                    <li><a href="homework2-1.html">Homework 2-1</a></li>
+                <li><a href="homework2-2.html">Homework 2-2</a></li>
+                <li><a href="homework2-3.html">Homework 2-3</a></li>
+                </ul>
+            </nav>
+            <main>
+                <p>Using form input to tally and validate</p>
+                <form name="myform">
+<table>
+<tr>
+<td>First Number:</td>
+<td><input type="text" name="num" id= "num0" size="10"></td>
+</tr>
+<tr>
+<td>Second Number:</td>
+<td><input type="text" name="num" id= "num1"  size="10"></td>
+</tr>
+    <tr>
+<td>Third Number:</td>
+<td><input type="text" name="num" id= "num2"  size="10"></td>
+</tr>
+    <tr>
+<td>Fourth Number:</td>
+<td><input type="text" name="num" id= "num3"  size="10"></td>
+</tr>
+    <tr>
+<td>Fifth Number:</td>
+<td><input type="text" name="num" id= "num4"  size="10"></td>
+</tr>
+<br>
+</table>
+
+<br> Results:
+<textarea rows="8" cols="60" name="result">
+</textarea>
+<br>                
+<input type="button" onclick="process()" value="SUBMIT">
+<input type="reset" value="RESET">
+<br>                    
+ <button type="button">Click to fade results</button>
+                    <br><br>
+</form>
+                
+                
+                </main>
+            <footer>
+            <ul>
+                <li><a href="homework1.html">Home Page</a></li>
+                <li><a href="homework3.html">Homework 3</a></li>
+                <li><a href="homework4.html">Homework 4</a></li>
+                <li><a href="homework5.html">Homework 5</a></li>
+                <li><a href="homework6.html">Homework 6</a></li>
+                <li><a href="homework7.html">Homework 7</a></li>
+                <li><a href="homework8.html">Homework 8</a></li>
+            </ul>
+            
+            </footer>
+        
+        </body>
+        
+    </div>
+</html>
