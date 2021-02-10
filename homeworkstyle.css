@@ -8,7 +8,7 @@
 		   margin: auto;
            min-width:850px; }
 header{ grid-area: logo; text-align: center; background-color: gold;}
-header h1 {background-color: gold;}
+/*header h1 {background-color: gold;}*/
 main{ grid-area: right; background-color: lightyellow; width: auto;}
 main p{background-color: ghostwhite;border: 1px solid goldenrod;}
 body{font-size: 3em; text-align: center;}
