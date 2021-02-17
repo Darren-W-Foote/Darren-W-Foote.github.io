@@ -2,12 +2,12 @@
                    grid-template-areas: 'logo logo'
         'menu right' 'bottom bottom';
             grid-gap: 5px; 
-            background-color: lightyellow;
+            background-color: #ccffff;
            color: #000066;
            width: 90%;
 		   margin: auto;
            min-width:850px; }
-header{ grid-area: logo; text-align: center; background-color: gold;}
+header{ grid-area: logo; text-align: center; background-color: #a3a3c2;}
 /*header h1 {background-color: gold;}*/
 main{ grid-area: right; background-color: lightyellow; width: auto;}
 main p{background-color: ghostwhite;border: 1px solid goldenrod;}
